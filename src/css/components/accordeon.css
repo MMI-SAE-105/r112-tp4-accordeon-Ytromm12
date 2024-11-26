@@ -1,3 +1,12 @@
-/**
-* Accordeon
-*/
+details {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  details[open] {
+    background-color: #e0f7fa;
+    transform: scale(1.02);
+  }
+  
