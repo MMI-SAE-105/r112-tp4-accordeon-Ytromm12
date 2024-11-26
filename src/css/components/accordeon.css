@@ -1,12 +1,19 @@
 details {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease, background 0.3s ease;
-  }
-  
-  details[open] {
-    background-color: #e0f7fa;
-    transform: scale(1.02);
-  }
-  
+    /* fermé et ouvert */
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+    flex-direction: row;
+}
+
+details[open] {
+    /* ouvert */
+    gap: 10px;
+    transition: 0.5s ease-in;
+}
+
+.accordeon {
+    display: flex;
+    gap: 10px;
+}
